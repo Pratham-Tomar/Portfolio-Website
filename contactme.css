@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@1,600&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    font-family: "Inter", sans-serif;
+  }
+.container {
+    height: auto;
+    width: auto;
+    background: linear-gradient(109.6deg, rgb(0, 37, 84) 11.2%, rgba(0, 37, 84, 0.32) 100.2%);
+    color: antiquewhite;
+    position: relative;
+    overflow: auto;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    list-style-type: none; 
+  
+}
+nav ul li{
+    margin:0 5px;
+
+}
+nav ul a{
+    text-decoration: none;
+    padding: 0.6rem 1.3rem;
+    font-size: 17px;
+    font-weight: bold;
+    color: #494234;
+    position: relative;
+    z-index: 1;
+    color: antiquewhite; 
+
+}
+nav ul a::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0px;
+    border-radius: 20px;
+    background-color: #C8EBB1;
+    z-index: -1;
+    transition: 0.5s;
+}
+nav ul a:hover:after{
+    width: 100%;
+}
+.main-content {
+  margin-top: 6% ;
+    width: 90%;
+    margin-left: 20px;
+    
+    
+    display: flex;
+    
+}
+.image-prat ,.main-text{
+    flex-basis: 65%;
+}
+.image-prat img{
+    width: 100%;
+}
+.main-content h1 {
+  font-weight: 900;
+    font-size: 60px;
+    letter-spacing: 1px;
+    color: antiquewhite;
+}
+.main-content p{
+  font-family: 'Ysabeau Infant', sans-serif;
+    margin-top: 25px;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.main-content button{
+    margin-top: 2.5rem;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 0.5rem 2.5rem 0.5rem 1rem;
+    border-radius: 0 50% 50% 0;
+    border-radius: 22px;
+color: white;
+background-color: dodgerblue;
+font-weight: bold;
+
+
+cursor: pointer;
+}
+.main-content button:hover{
+  color: dodgerblue;
+  background-color: white;
+}
+
+
+.right{
+    position: absolute;
+    right: 8%;
+    bottom: 20%;
+    color: antiquewhite;
+}
+.box{
+    display: flex;
+    align-items: center;
+   
+}
+.right .box .image img{
+    width: 70%;
+}
+.image{
+    margin-top: 2rem;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: -5px 5px 17px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.image:hover{
+    background-color: rgb(255, 255, 255);
+}
+.box .inner-box{
+    margin: 1.5rem 0 0 1rem;
+}
+.box .inner-box p{
+  padding: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.social-links{
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+.social-links::before{
+    content: "";
+    width: 80%;
+    height: 3px;
+    position: absolute;
+    top:42%;
+    left: -150px;
+    background-color: #ffffff;
+}
+.social-links i{
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #fffbfb;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.social-links i:hover{
+    transform: translateY(-5px);
+}
+img{
+    border-radius: 20px;
+}
+.ttool{
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: large;
+    
+    
+}
+
+
+.social-links::before {
+    content: "";
+    width: 80%;
+    height: 3px;
+    position: absolute;
+    top: 42%;
+    left: -150px;
+    background-color: #f8f3eb;
+}
+
+.social-links i {
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #090947 ;
+    color: antiquewhite;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.social-links i:hover {
+    transform: translateY(-5px);
+}
+.swiper {
+    
+    width: 16rem;
+}
+
+.swiper-slide {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .container {
+        height: auto;
+        
+        
+    }
+
+
+    .main-content {
+        width: 100%;
+        margin-left: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-content h1 {
+        font-size: 40px;
+    }
+
+    .main-content p {
+        font-size: 14px;
+    }
+
+    .right {
+        position: relative;
+        padding-left: 20%;
+        right: 20%;
+        bottom: end;
+        top: 60%;
+    }
+
+    .social-links {
+        position: relative;
+        padding-top: 5%;
+        margin-left: 10%;
+        right: 50%;
+        bottom: 10px;
+        transform: translateX(50%);
+    }
+
+    .social-links::before {
+        position: relative;
+        margin-left: 10%;
+
+        left: 50%;
+        transform: translateX(-50%);
+    }
+ .wave{
+     display: none;
+ }
+    
+
+    .right .box .image img {
+        
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .wave{
+     display: none;
+ }
+
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .main-content button {
+        font-size: 16px;
+    }
+} 
+
+  .formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+  }
+
+  .formbold-form-wrapper {
+    margin: 0 auto;
+    max-width: 550px;
+    width: 100%;
+    background: white;
+  }
+
+  .formbold-input-flex {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+  }
+  .formbold-input-flex > div {
+    width: 50%;
+  }
+
+  .formbold-input-radio-wrapper {
+    margin-bottom: 28px;
+  }
+  .formbold-radio-flex {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .formbold-radio-label {
+    font-size: 14px;
+    line-height: 24px;
+    color: #07074D;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .formbold-input-radio {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .formbold-radio-checkmark {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #FFFFFF;
+    border: 1px solid #DDE3EC;
+    border-radius: 50%;
+  }
+  .formbold-radio-label .formbold-input-radio:checked ~ .formbold-radio-checkmark {
+    background-color: #6A64F1;
+  }
+  .formbold-radio-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .formbold-radio-label .formbold-input-radio:checked ~ .formbold-radio-checkmark:after {
+    display: block;
+  }
+
+  .formbold-radio-label .formbold-radio-checkmark:after {
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    transform: translate(-50%, -50%);
+  }
+
+  .formbold-form-input {
+    width: 100%;
+    padding: 13px 22px;
+    border-radius: 5px;
+    border: 1px solid #DDE3EC;
+    background: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074D;
+    outline: none;
+    resize: none;
+  }
+  .formbold-form-input::placeholder {
+    color: #536387;
+  }
+  .formbold-form-input:focus {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+  .formbold-form-label {
+    color: #07074D;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .formbold-btn {
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 14px 25px;
+    border: none;
+    font-weight: 500;
+    background-color: #6A64F1;
+    color: white;
+    cursor: pointer;
+    margin-top: 25px;
+  }
+  .formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }

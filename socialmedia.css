@@ -1,0 +1,32 @@
+.social-links {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+.social-links::before {
+    content: "";
+    width: 80%;
+    height: 3px;
+    position: absolute;
+    top: 42%;
+    left: -150px;
+    background-color: antiquewhite;
+}
+
+.social-links i {
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #2A2A72;
+    color: antiquewhite;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.social-links i:hover {
+    transform: translateY(-5px);
+}
